@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_01_20_171317) do
+ActiveRecord::Schema[8.0].define(version: 2025_01_20_172938) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -20,6 +20,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_20_171317) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "show_id", null: false
+    t.index ["show_id"], name: "index_schedules_on_show_id"
     t.index ["user_id"], name: "index_schedules_on_user_id"
   end
 
@@ -41,5 +43,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_20_171317) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "schedules", "shows"
   add_foreign_key "schedules", "users"
 end
