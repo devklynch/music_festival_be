@@ -17,16 +17,13 @@
         ]
       },
       "/Users/devlin/Desktop/turing_work/3mod/music_festival_be/spec/models/show_spec.rb": {
-        "lines": []
-      },
-      "/Users/devlin/Desktop/turing_work/3mod/music_festival_be/spec/models/user_spec.rb": {
-        "lines": []
-      },
-      "/Users/devlin/Desktop/turing_work/3mod/music_festival_be/app/models/user.rb": {
         "lines": [
           1,
+          null,
           1,
-          1,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -37,8 +34,28 @@
           1,
           null
         ]
+      },
+      "/Users/devlin/Desktop/turing_work/3mod/music_festival_be/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/devlin/Desktop/turing_work/3mod/music_festival_be/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1737397950
+    "timestamp": 1737405464
   }
 }

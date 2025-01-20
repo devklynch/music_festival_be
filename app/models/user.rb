@@ -1,4 +1,5 @@
 class User < ApplicationRecord
-    has_many :shows, through: :schedules
     has_one :schedule
+    has_many :shows, through: :schedule
+   
 end
