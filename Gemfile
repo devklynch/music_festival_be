@@ -44,6 +44,16 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  gem "pry"
+  gem "factory_bot_rails"
+end
+group :test do
+  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem "shoulda-matchers"
+  gem "vcr"
+  gem "webmock"
+  gem "fuubar"
+  gem "simplecov", require: false
 end
 
 
