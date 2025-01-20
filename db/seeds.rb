@@ -7,3 +7,27 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+User.destroy_all
+Show.destroy_all
+Schedule.destroy_all
+
+user1 = User.create!(
+    first_name:"Devlin",
+    last_name: "Lynch",
+    email: "dlynchtest@test.com")
+
+show1 = Show.create!(
+    artist: "Tyler, The Creator",
+    location: "Mojave",
+    date: Date.new(2025, 4, 11),
+    start_time: '16:00',
+    end_time: '17:30'
+)
+
+schedule1 = Schedule.create!(
+    title: "Devlin's Schedule",
+    date: Date.new(2025, 4, 11),
+    user: user1,
+    show: show1
+)
