@@ -22,14 +22,12 @@
           null,
           1,
           2,
-          2,
           null,
           null
         ]
       },
       "/Users/devlin/Desktop/turing_work/3mod/music_festival_be/app/models/show.rb": {
         "lines": [
-          1,
           1,
           1,
           null
@@ -56,6 +54,6 @@
         ]
       }
     },
-    "timestamp": 1737405464
+    "timestamp": 1737408348
   }
 }

@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Show, type: :model do
-    it { should belong_to(:user) }
-    it { should belong_to(:schedule) }
+    it { should have_and_belong_to_many(:schedules) }
     
 end
