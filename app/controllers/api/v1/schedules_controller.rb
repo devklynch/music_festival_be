@@ -1,9 +1,13 @@
 class Api::V1::SchedulesController < ApplicationController
+
+    def index
+        render json: ScheduleSerializer.format_schedules(Schedule.all)
+    end
     def show
         user = User.find(params[:user_id])
         schedule = user.schedule
 
-        render json: ScheduleSerializer.format_schedule(schedule)
+        render json: ScheduleSerializer.format_schedules(schedule)
     end
 
     def remove_show
@@ -12,6 +16,6 @@ class Api::V1::SchedulesController < ApplicationController
 
         schedule.shows.destroy(show)
 
-        render json: ScheduleSerializer.format_schedule(schedule)
+        render json: ScheduleSerializer.format_schedules(schedule)
     end
 end

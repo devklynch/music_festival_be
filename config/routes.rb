@@ -12,7 +12,7 @@ Rails.application.routes.draw do
       resources :users, only: [] do
         get 'schedule', to: 'schedules#show'
       end
-      resources :schedules, only: [] do
+      resources :schedules, only: [:index] do
         delete 'shows/:show_id', to: 'schedules#remove_show'
       end
     end
