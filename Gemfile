@@ -46,6 +46,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
   gem "pry"
   gem "factory_bot_rails"
+  gem "rspec-rails"
 end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
