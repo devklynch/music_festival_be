@@ -4,8 +4,7 @@ class Api::V1::SchedulesController < ApplicationController
         render json: ScheduleSerializer.format_schedules(Schedule.all)
     end
     def show
-        user = User.find(params[:user_id])
-        schedule = user.schedule
+        schedule = Schedule.find(params[:id])
 
         render json: ScheduleSerializer.format_schedules(schedule)
     end
