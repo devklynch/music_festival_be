@@ -6,7 +6,17 @@ class Api::V1::SchedulesController < ApplicationController
     def show
         schedule = Schedule.find(params[:id])
 
-        render json: ScheduleSerializer.format_schedules(schedule)
+        shows = schedule.shows
+
+        if params[:sort_by] == 'start_time'
+            order = params[:order] == 'desc' ? :desc : :asc
+            shows = shows.order(start_time: order)
+          elsif params[:sort_by] == 'artist'
+            order = params[:order] == 'desc' ? :desc : :asc
+            shows = shows.order(artist: order)
+          end
+
+        render json: ScheduleSerializer.format_schedules(schedule,sorted_shows: shows)
     end
 
     def remove_show

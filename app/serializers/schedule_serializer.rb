@@ -1,6 +1,6 @@
 class ScheduleSerializer
 
-    def self.format_schedules(schedules)
+    def self.format_schedules(schedules, sorted_shows: nil)
 
         schedules = Array(schedules)
 
@@ -12,7 +12,7 @@ class ScheduleSerializer
                     title: schedule.title,
                     date: schedule.date,
                     user_id: schedule.user.id,
-                    shows: schedule.shows.map do |show|
+                    shows: (sorted_shows || schedule.shows).map do |show|
                         {
                             id: show.id,
                             artist: show.artist,
