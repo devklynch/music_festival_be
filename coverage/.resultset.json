@@ -77,18 +77,18 @@
           1,
           null,
           1,
-          0,
+          2,
           null,
-          0,
+          1,
           null,
           null,
           1,
-          0,
-          0,
+          3,
+          2,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
           null
         ]
@@ -97,11 +97,12 @@
         "lines": [
           1,
           1,
-          0,
+          3,
+          3,
           null,
           null,
-          1,
-          0,
+          null,
+          null,
           null,
           null
         ]
@@ -112,19 +113,19 @@
           null,
           1,
           null,
-          1,
+          3,
           null,
-          1,
+          3,
           null,
-          7,
-          null,
-          null,
+          9,
           null,
           null,
           null,
           null,
           null,
-          20,
+          null,
+          null,
+          23,
           null,
           null,
           null,
@@ -138,8 +139,27 @@
           null,
           null
         ]
+      },
+      "/Users/devlin/Desktop/turing_work/3mod/music_festival_be/app/serializers/error_serializer.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1737556732
+    "timestamp": 1737559154
   }
 }
