@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"x
 gem "rails", "~> 8.0.1"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
@@ -33,7 +33,7 @@ gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
-# gem "rack-cors"
+gem "rack-cors"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -47,10 +47,11 @@ group :development, :test do
   gem "pry"
   gem "factory_bot_rails"
   gem "rspec-rails"
+  gem "shoulda-matchers"
 end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "shoulda-matchers"
+
   gem "vcr"
   gem "webmock"
   gem "fuubar"
