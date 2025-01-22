@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"x
 gem "rails", "~> 8.0.1"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
@@ -47,10 +47,11 @@ group :development, :test do
   gem "pry"
   gem "factory_bot_rails"
   gem "rspec-rails"
+  gem "shoulda-matchers"
 end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "shoulda-matchers"
+
   gem "vcr"
   gem "webmock"
   gem "fuubar"
