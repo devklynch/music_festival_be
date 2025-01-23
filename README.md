@@ -16,9 +16,7 @@ Fork and clone the repo
 Install Dependencies:
 `bundle install`
 Set up the database:
-`rails db:create`
-`rails db:migrate`
-`rails db:seed`
+`rails db:{drop,create,migrate,seed}`
 Start Your rails server:
 `rails server`
 

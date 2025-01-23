@@ -12,7 +12,7 @@ User.destroy_all
 Show.destroy_all
 Schedule.destroy_all
 
-@user1 = User.create!(
+user1 = User.create!(
     first_name:"Devlin",
     last_name: "Lynch",
     email: "dlynchtest@test.com")
@@ -146,7 +146,7 @@ schedule4 = Schedule.create!(
 schedule5 = Schedule.create!(
     title: "Emma's List of Shows",
     date: Date.new(2025, 4, 11),
-    user: user4
+    user: user5
 )
 
 schedule1.shows.push(show1,show3,show4,show8,show9)
