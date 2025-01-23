@@ -3,6 +3,7 @@ class Api::V1::SchedulesController < ApplicationController
     def index
         render json: ScheduleSerializer.format_schedules(Schedule.all)
     end
+
     def show
         schedule = Schedule.find(params[:id])
 
