@@ -1,5 +1,3 @@
-# Musica Festival Scheduler
-
 # Music Festival Scheduler
 
 ## Description
