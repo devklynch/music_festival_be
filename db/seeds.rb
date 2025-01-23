@@ -84,7 +84,7 @@ show6 = Show.create!(
     end_time: '13:00'
 )
 show7 = Show.create!(
-    artist: "Chappel Roan",
+    artist: "Renee Rapp",
     location: "Gobi",
     date: Date.new(2025, 4, 11),
     start_time: '12:00',
